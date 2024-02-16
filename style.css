@@ -1,0 +1,426 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: url('10.png') center center fixed;
+    background-size: cover;
+    font-family: arial;
+}
+
+table {
+    border-collapse: collapse;
+    border: 25px solid #2b9ff1;
+    border-radius: 250px;
+    position: relative;
+}
+
+td {
+    width: 125px;
+    height: 125px;
+    cursor: pointer;
+    border: 10px solid #1974e2;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5) url('tlo.png') no-repeat center center;
+    background-size: cover;
+}
+
+
+
+.blue { background-color: rgba(1, 63, 146, 0.8); }
+.white { background-color: rgba(255, 255, 255, 0.8); }
+.red { background-color: rgba(137, 0, 10, 0.8); }
+.yellow { background-color: rgba(146, 142, 1, 0.8); }
+.gray { background-color: rgba(55, 53, 55, 0.8); }
+.green { background-color: rgba(2, 145, 54, 0.8); }
+
+.free-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.575);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.gray-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.274);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    pointer-events: none;
+}
+
+.Punkty,
+.Punkty1,
+.Punkty2,
+.Punkty3,
+.Punkty4,
+.Punkty5 {
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.Punkty {
+    font-size: 32px;
+    left: 460px;
+    top: 100px;
+}
+
+.Punkty1 {
+    left: 500px;
+    top: 195px;
+}
+
+.Punkty2 {
+    left: 490px;
+    top: 330px;
+}
+
+.Punkty3 {
+    left: 490px;
+}
+
+.Punkty4 {
+    left: 490px;
+    top: 615px;
+}
+
+.Punkty5 {
+    left: 490px;
+    top: 752px;
+}
+
+.Steal,
+.Steal1,
+.Steal2,
+.Steal3,
+.Steal4,
+.Steal5 {
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.Steal {
+    font-size: 32px;
+    left: 1346px;
+    top: 100px;
+}
+
+.Steal1 {
+    left: 1378px;
+    top: 195px;
+}
+
+.Steal2 {
+    left: 1378px;
+    top: 330px;
+}
+
+.Steal3 {
+    left: 1365px;
+}
+
+.Steal4 {
+    left: 1365px;
+    top: 615px;
+}
+
+.Steal5 {
+    left: 1365px;
+    top: 752px;
+}
+
+.text-inputs {
+    margin-right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.text-inputs label,
+.text-inputs textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.text-inputs textarea {
+    color: white;
+    background-color: rgb(39, 39, 39);
+    border: 0px solid black;
+    width: 420px; /* Zmieniono szerokość pola tekstowego */
+    height: 715px; /* Dodano wysokość pola tekstowego */
+    padding: 10px;
+}
+
+#Logo1 {
+    background-color: rgb(34, 34, 34);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 32px;
+    top: 95px;
+    border-radius: 20px;
+}
+
+#Logo2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 260px;
+    top: 95px;
+    border-radius: 20px;
+}
+
+#PlayerPanel1 {
+    position: absolute;
+    width: 350px;
+    height: 120px;
+    background-color: rgb(94, 20, 25);
+    border-radius: 35px;
+    border: 2px solid #8de5ff;
+    left: 20px;
+    top: 85px;
+}
+
+#Team1 {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    left: 50px;
+    top: 15px;
+}
+
+#PunktyC1{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    left: 148px;
+    top: 82px;
+}
+
+#WartoscC1 {
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    border: 0px solid black;
+    font-size: 40px;
+    font-weight: 900;
+    left: 148px;
+    top: 135px;
+    width: 90px;
+    height: 45px;
+    text-align: center; /* Dodane centrowanie tekstu */
+    line-height: 45px; /* Dodane centrowanie tekstu pionowo */
+}
+
+.WartoscC1P {
+    text-align: center; /* Dodane centrowanie tekstu */
+}
+
+.WartoscC1P input {
+    width: 100%; /* Aby input wypełniał całą dostępną szerokość rodzica */
+}
+
+
+#Logo3 {
+    background-color: rgb(34, 34, 34);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 32px;
+    bottom: 95px;
+    border-radius: 20px;
+}
+
+#Logo4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 260px;
+    bottom: 95px;
+    border-radius: 20px;
+}
+
+#PlayerPanel2 {
+    position: absolute;
+    width: 350px;
+    height: 120px;
+    background-color: rgb(129, 125, 5);
+    border-radius: 35px;
+    border: 2px solid #8de5ff;
+    left: 20px;
+    bottom: 85px;
+}
+
+#Team2 {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    left: 50px;
+    bottom: 15px;
+}
+
+#PunktyZ1 {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    left: 148px;
+    bottom: 145px;
+}
+
+/* #WartoscZ1 {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    left: 166px;
+    bottom: 60px;
+} */
+
+#WartoscZ1 {
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    border: 0px solid black;
+    font-size: 40px;
+    font-weight: 900;
+    left: 148px;
+    bottom: 107px;
+    width: 90px;
+    height: 45px;
+    text-align: center; /* Dodane centrowanie tekstu */
+    line-height: 45px; /* Dodane centrowanie tekstu pionowo */
+}
+
+.WartoscZ1P {
+    text-align: center; /* Dodane centrowanie tekstu */
+}
+
+.WartoscZ1P input {
+    width: 100%; /* Aby input wypełniał całą dostępną szerokość rodzica */
+}
+
+#HeryodPanel {
+    position: absolute;
+    width: 350px;
+    height: 125px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 35px;
+    border: 2px solid #8de5ff;
+    left: 20px;
+}
+
+#LogoHeryod {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 32px;
+    border-radius: 20px;
+}
+
+#Prowadzacy {
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    font-weight: 900;
+    left: 140px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.S1,
+.S2,
+.S3,
+.S4 {
+    position: absolute;
+    color: white;
+    font-family: 'Arial', sans-serif; /* Ustawienie czcionki na Arial */
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.S1 {
+    bottom: 186px;
+    left: 50px;
+}
+
+.S2 {
+    bottom: 186px;
+    left: 80px;
+}
+
+.S3 {
+    bottom: 186px;
+    left: 110px;
+}
+
+.S4 {
+    bottom: 186px;
+    left: 140px;
+}
+
+.S5,
+.S6,
+.S7,
+.S8 {
+    position: absolute;
+    color: white;
+    font-family: 'Arial', sans-serif; /* Ustawienie czcionki na Arial */
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.S5 {
+    top: 185px;
+    left: 50px;
+}
+
+.S6 {
+    top: 185px;
+    left: 80px;
+}
+
+.S7 {
+    top: 185px;
+    left: 110px;
+}
+
+.S8 {
+    top: 185px;
+    left: 140px;
+}
