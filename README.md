@@ -2,3 +2,4 @@ The UI design project created for a game show among friends, designed specifical
 
 Inspiration: [Video Link](https://www.youtube.com/watch?v=umidJTPq3Hk&t=234s)
  
+No responsive, just for single use
